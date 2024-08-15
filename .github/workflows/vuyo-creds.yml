@@ -1,0 +1,20 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations: &ref_0
+    sealedsecrets.bitnami.com/cluster-wide: 'true'
+    nethopper.io/controlled: 'true'
+    nethopper.io/controlled-type: iac
+    nethopper.io/generated-at: '2024-08-15T17:50:18+02:00'
+    nethopper.io/generator-version: 5.1.0
+  name: vuyo-creds
+  namespace: default
+spec:
+  encryptedData:
+    vuyo-secs: >-
+      AgCeU6Fg98aMwMpIeJTGM3vwe7HW6pUYQ+0b7r1TPngD88SObQyRd2ZZCCxJ7Yrg92N2nauB+j1TEVl+RCX3/1M4o4YDbu/M5E443K10tKJlsHC8VZEsX6mUDpl+SvOp6rKMZLD51R0UgVVZXQTYJJWeyRUBei/qXCsbkPNTiEBU2dm0VwYiggqhJU/IiTqPagCTu0DTEdxsHfz9BGJ1DcVZeahIEqpnS0GfXB4KxZKLqTHN47oIN+zoVODO3vAtVHjz73pdlbKQn0f1YwqM2CnabAVMpvOt2qXXQb+cyRGTlDBPxdPZaQdKllxUYVbMUwlWMd2L1k1kqSCBjCgrt/OeI51175ln7CydBFAvCqelW0xVP7c07BaesELdtXb78hLAgStqTaNgN/TnzHZuCw6HsDsJ4fXSdTbz56Sv4uGdOHmAO1QH+42YPO0fT2COoLoXhL6+Dv/mC5o2abe5ueURTnaRLGwueRKT0RCH1/dGuUQakPbgIpVJq5iwBdpetRxhgipKcyJSsrdtft218375AW/3a+i4/l9o94eidCEkd73zgHet2PHFxMxHw9qkp6v49HLjfnFs2Gb24kqJtNPDtNmG5wwRMvfRKdsFzZ90UUZocoULwFEuhpxbnBLt9DiYmcWrpdCh9vxL3dELsP4pWOp5OluqMD4dVMhsMNF8bCvAflMXmVjECKrjBHDPHV1WwXva
+  template:
+    metadata:
+      annotations: *ref_0
+      name: vuyo-creds
+    type: Opaque
